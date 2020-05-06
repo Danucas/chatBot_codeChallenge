@@ -2,4 +2,61 @@
 	color: blue;
 	width: 100%;
 	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
 }
+
+.message_cont {
+	justify-content: center;
+	width: 100%;
+}
+
+.mess_inp {
+	height: 45px;
+	width: 30%;
+	padding: 6px 18px;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 16px;
+	color: grey;
+	background-color: white;
+	border: 3px solid #01f4;
+	border-radius: 30px;
+	overflow-y: scroll;
+	margin-left: 26%;
+}
+
+.send {
+	cursor: pointer;
+	width: 45px;
+	height: 45px;
+	margin-left: 20px;
+	border: 0px;
+	background-color: aquamarine;
+	color: blueviolet;
+	border-radius: 50%;
+
+}
+.send:hover{
+	width: 48px;
+	height: 48px;
+}
+
+.send:active {
+	border: 0px;
+	width: 46px;
+	height: 46px;
+	background-color: blueviolet;
+	color: white;
+}
+
+.send:focus {
+    outline: 0;
+}
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	  -webkit-user-select: none; /* Safari */
+	   -khtml-user-select: none; /* Konqueror HTML */
+		 -moz-user-select: none; /* Old versions of Firefox */
+		  -ms-user-select: none; /* Internet Explorer/Edge */
+			  user-select: none; /* Non-prefixed version, currently
+									supported by Chrome, Opera and Firefox */
+  }
