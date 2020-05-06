@@ -60,3 +60,15 @@
 			  user-select: none; /* Non-prefixed version, currently
 									supported by Chrome, Opera and Firefox */
   }
+
+.container {
+	width: 80%;
+	margin: 1rem auto;
+}
+
+#response {
+	margin: 0 auto;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: 400;
+	font-size: 2em;
+}

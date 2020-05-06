@@ -6,8 +6,15 @@
 </head>
 <body>
 	<h1 class="title">Hi, what do you need today?</h1>
-	<div class="message_cont"><input class="mess_inp" type="text"><button class="send noselect">send</button></div>
-	<p id="response">response</p>
+	<div class="message_cont">
+		<form action="{{ url_for('send_mesagge') }}" method="GET">
+			<input class="mess_inp" name="message" type="text">
+			<button class="send noselect" type="submit">send</button>
+		</form>
+	</div>
+	<div class="container">
+		<p id="response">{{ message }}</p>
+	</div>
 
 </body>
 
