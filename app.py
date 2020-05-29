@@ -1,9 +1,11 @@
 #!/usr/bin/python3
+import requests
 from flask import Flask, request, render_template
 from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app, resources={"*": {"origins": "0.0.0.0"}})
+
 
 @app.route("/", strict_slashes=False)
 def index():
@@ -11,14 +13,24 @@ def index():
     """
     return render_template('index.html')
 
-@app.route("/send", methods=['GET'])
+
+@app.route("/send", methods=['GET', 'POST'])
 def send_mesagge():
     """
     Sends message to Chatbot API
     """
-    message  = request.url
-    message = message[33:]
-    message = str(message).replace('+', ' ')
+    header = {}
+    header['authorization'] = 'Bearer pspo4eqrrXfHmdNEM_UKuXGnYVRUGPWY'
+    header['content-type'] = 'application/json'
+
+    if request.method == 'POST':
+        message = request.form['message']
+    data = {
+        'query': 'message',
+        'sessionId': '92354782222'
+    }
+    req = requests.post('https://api.chatbot.com/query', headers=header, data=data)
+    print(req.content)
     return render_template('index.html', message=message)
 
 
