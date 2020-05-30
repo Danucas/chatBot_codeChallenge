@@ -23,8 +23,9 @@ def send_mesagge():
     header['authorization'] = 'Bearer pspo4eqrrXfHmdNEM_UKuXGnYVRUGPWY'
     header['content-type'] = 'application/json'
 
-    if request.method == 'POST':
-        message = request.form['message']
+    if request.method == 'GET':
+        message = request.args.get('message')
+        print(message)
     data = {
         'query': 'message',
         'sessionId': '92354782222'
@@ -35,4 +36,4 @@ def send_mesagge():
 
 
 if __name__ == '__main__':
-    app.run('0.0.0.0', '5000', threaded=True)
+    app.run('0.0.0.0', '3000', threaded=True)
