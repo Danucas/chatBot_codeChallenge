@@ -1,5 +1,4 @@
 .title {
-
     margin-top: 2%;
     color: blue;
     font-size: 20px;
@@ -7,15 +6,12 @@
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
-
 .message_cont {
     justify-content: center;
     width: 100%;
     margin-top: 40px;
 }
-
 .mess_inp {
-
     width: 30%;
     padding: 4px 16px;
     font-family: 'Courier New', Courier, monospace;
@@ -27,11 +23,9 @@
     overflow-y: scroll;
     margin-left: 30%;
 }
-
 .mess_inp {
     outline: 0px;
 }
-
 .send {
     cursor: pointer;
     width: 52px;
@@ -41,43 +35,37 @@
     background-color: aquamarine;
     color: blueviolet;
     border-radius: 50%;
-
 }
 .send:hover {
     background-color: rgb(91, 245, 194);
 }
-
 .send:active {
     border: 0px;
     background-color: blueviolet;
     color: white;
 }
-
 .send:focus {
     outline: 0;
 }
 .noselect {
-	-webkit-touch-callout: none; /* iOS Safari */
-	  -webkit-user-select: none; /* Safari */
-	   -khtml-user-select: none; /* Konqueror HTML */
-		 -moz-user-select: none; /* Old versions of Firefox */
-		  -ms-user-select: none; /* Internet Explorer/Edge */
-			  user-select: none; /* Non-prefixed version, currently
-									supported by Chrome, Opera and Firefox */
-  }
-
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
+}
 .container {
-	width: 80%;
-	margin: 1rem auto;
+    width: 80%;
+    margin: 1rem auto;
 }
-
 #response {
-	margin: 0 auto;
-	font-family: 'Courier New', Courier, monospace;
-	font-weight: 400;
-	font-size: 2em;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 2em;
 }
-
 .response {
     background-color: rgba(240, 248, 255, 0.671);
     height: 400px;
@@ -87,10 +75,8 @@
     font-family: sans-serif;
     color: cadetblue;
 }
-
-
 .bubble_1 {
-	width: fit-content;
+    width: fit-content;
     background-color: rgb(172, 255, 227);
     color: cadetblue;
     padding:8px;
@@ -98,18 +84,17 @@
     margin-left: 10px;
     margin-right: 18%;
     border: 0px;
-	border-radius: 10px;
-	text-align: left;
+    border-radius: 10px;
+    text-align: left;
 }
-
 .bubble_2 {
-	width: fit-content;
+    width: fit-content;
     background-color: rgb(255, 255, 255);
-	color: cadetblue;
-	margin-left: auto;
+    color: cadetblue;
+    margin-left: auto;
     padding:8px;
     font-size: 12px;
     border: 0px;
-	border-radius: 10px;
-	text-align: right;
+    border-radius: 10px;
+    text-align: right;
 }
